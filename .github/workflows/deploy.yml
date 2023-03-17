@@ -63,6 +63,9 @@ jobs:
       - name: Output contents
         run: ls
       - name: Deploy site
+        id: deploy
         uses: ./.github/actions/deploy-s3-javascript
         with:
           dis-folder: ./dist
+      - name: Output information
+        run: echo "'URL:' ${{ steps.deploy.outputs.url }}"

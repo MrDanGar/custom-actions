@@ -12,6 +12,9 @@ inputs:
   dis-folder:
     description: 'Path to the folder containing the deployable files'
     required: true
+outputs:
+  url:
+    description: 'An URL'
 runs:
   using: 'node16'
   main: 'main.js'

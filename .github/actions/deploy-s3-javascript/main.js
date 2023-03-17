@@ -21,6 +21,7 @@ function upload() {
     core.notice(`dist folder: ${distFolder}`);
     //exec.exec(`aws s3 sync ${bucket} ${s3URI} --region ${bucketRegion}`);
 
+    core.setOutput('url', 'This an the output from the JS action');
 }
 
 run();
