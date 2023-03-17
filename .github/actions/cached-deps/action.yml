@@ -14,6 +14,7 @@ runs:
     - name: Output caching enabled
       if: inputs.caching == 'false'
       run: echo "CACHING DISABLED"
+      shell: bash
     - name: Cache dependencies
       if: inputs.caching == 'true'
       id: cache
