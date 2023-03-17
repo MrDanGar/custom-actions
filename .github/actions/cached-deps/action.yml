@@ -3,6 +3,9 @@ description: 'Get the dependencies via npm and cache them'
 runs:
   using: 'composite'
   steps:
+    - name: Custom action debug output
+      run: echo "--In custom action--"
+      shell: bash
     - name: Cache dependencies
       id: cache
       uses: actions/cache@v3
