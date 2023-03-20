@@ -3,6 +3,7 @@ import boto3
 import mimetypes
 from botocore.config import Config
 
+# comment
 
 def run():
     bucket = os.environ['INPUT_BUCKET']
