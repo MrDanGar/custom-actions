@@ -28,7 +28,7 @@ def run():
     with open(os.environ['GITHUB_OUTPUT'], 'a') as gh_output:
         #print(f'website-url={website_url}', file=gh_output)
         tmp_value = "This is a test"
-        print(url=tmp_value, file=gh_output)
+        print(f'url={tmp_value}', file=gh_output)
 
 
 if __name__ == '__main__':
