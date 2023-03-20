@@ -27,8 +27,8 @@ def run():
     # The below code sets the 'website-url' output (the old ::set-output syntax isn't supported anymore - that's the only thing that changed though)
     with open(os.environ['GITHUB_OUTPUT'], 'a') as gh_output:
         #print(f'website-url={website_url}', file=gh_output)
-        tmp_value = "This is a test \n"
-        print(tmp_value, file=gh_output)
+        tmp_value = "This is a test"
+        print(url=tmp_value, file=gh_output)
 
 
 if __name__ == '__main__':
