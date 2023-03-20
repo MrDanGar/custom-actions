@@ -64,7 +64,7 @@ jobs:
         run: ls
       - name: Deploy site
         id: deploy
-        uses: ./.github/actions/deploy-s3-javascript
+        uses: ./.github/actions/deploy-s3-docker
         with:
           dis-folder: ./dist
       - name: Output information
