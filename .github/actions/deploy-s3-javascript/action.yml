@@ -9,7 +9,7 @@ inputs:
     description: 'The buckets region'
     requirde: false
     default: 'TEST_REGION'
-  dis-folder:
+  dist-folder:
     description: 'Path to the folder containing the deployable files'
     required: true
 outputs:
