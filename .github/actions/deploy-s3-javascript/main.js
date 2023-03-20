@@ -12,7 +12,7 @@ function upload() {
     // 1) get input 
     const bucket = core.getInput('bucket', { rquired: true });
     const bucketRegion = core.getInput('bucket-region', { require: true });
-    const distFolder = core.getInput('dis-folder', {require: true});
+    const distFolder = core.getInput('dist-folder', {require: true});
 
     // 2) upload files
     const s3URI = `s3://${bucket}`;
